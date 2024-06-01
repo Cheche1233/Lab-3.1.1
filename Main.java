@@ -100,3 +100,18 @@ class Automovil extends Vehiculo {
         System.out.println("Número de Puertas: " + numeroDePuertas + ", Tipo de Combustible: " + tipoDeCombustible + ", Es Automático: " + esAutomatico);
     }
 }
+
+public class Main {
+    public static void main(String[] args) {
+        // Crear un objeto de la clase Vehiculo
+        Vehiculo vehiculo = new Vehiculo("Toyota", "Corolla", 2020, 180.0);
+        System.out.println("Información del Vehículo:");
+        vehiculo.mostrarInfo();
+        
+        // Crear un objeto de la clase Automovil
+        Automovil automovil = new Automovil("Honda", "Civic", 2021, 200.0, 4, "Gasolina", true);
+        System.out.println("\nInformación del Automóvil:");
+        automovil.mostrarInfo();
+    }
+}
+
